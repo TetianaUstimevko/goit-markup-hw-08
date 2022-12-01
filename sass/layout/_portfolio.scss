@@ -1,0 +1,85 @@
+.nav--page-portfolio::after {
+    content: "";
+    display: block;
+    width: 78px;
+    height: 4px;
+    background-color: var(--color-blue);
+    border-radius: 2px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+}
+
+.portfolio-list {
+    background-color: var(--common-white);
+}
+
+.team-thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay-portfolio {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: translateY(100%);
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    background-color: rgba(33, 150, 243, 0.9);
+
+    transition: transform var(--anim);
+}
+
+.overlay-portfolio-text {
+    padding: 63px 24px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: var(--common-white);
+    text-align: left;
+}
+
+.portfolio-list:hover .overlay-portfolio {
+    transform: translateY(0);
+}
+
+.portfolio-link {
+    display: block;
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: box-shadow var(--anim);
+}
+
+.portfolio-link:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-card {
+    padding: 20px 24px;
+    border: 1px solid #eeeeee;
+    border-top: none;
+}
+
+.portfolio-title {
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio-text {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--color-grey);
+}
