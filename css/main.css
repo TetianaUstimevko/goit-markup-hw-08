@@ -484,7 +484,7 @@ img {
   gap: var(--indent);
 }
 
-.card-set-item {
+.card__set--item {
   -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
       flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
 }
@@ -515,20 +515,6 @@ img {
 
 .contact__icon {
   fill: currentColor;
-}
-
-.menu-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
-}
-
-.menu-item:not(:last-child) {
-  margin-right: 8px;
 }
 
 .list {
@@ -822,11 +808,11 @@ img {
   background: var(--color-hero);
 }
 
-.logo-footer {
+.footer__logo {
   color: var(--common-white);
 }
 
-.footer-link {
+.footer__link {
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -834,15 +820,15 @@ img {
   text-decoration: none;
 }
 
-.footer-item:not(:last-child) {
+.footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer-adress {
+.footer__adress {
   margin-top: 20px;
 }
 
-.footer-contact {
+.footer__contact {
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -852,45 +838,15 @@ img {
   transition: color var(--anim);
 }
 
-.footer-contact:hover {
+.footer__contact:hover {
   color: var(--color-blue);
 }
 
-.footer-contact:focus {
+.footer__contact:focus {
   color: var(--color-blue);
 }
 
-.menu-btn {
-  padding: 6px 22px;
-  border: 0;
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primary-color);
-  background: var(--secondary-color);
-  cursor: pointer;
-  -webkit-transition: color var(--anim), background-color var(--anim), -webkit-box-shadow var(--anim);
-  transition: color var(--anim), background-color var(--anim), -webkit-box-shadow var(--anim);
-  transition: color var(--anim), background-color var(--anim), box-shadow var(--anim);
-  transition: color var(--anim), background-color var(--anim), box-shadow var(--anim), -webkit-box-shadow var(--anim);
-}
-
-.menu-btn:hover {
-  background-color: var(--color-blue);
-  color: var(--common-white);
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.menu-btn:focus {
-  background-color: var(--color-blue);
-  color: var(--common-white);
-}
-
-.footer-container {
+.footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -902,7 +858,7 @@ img {
           justify-content: space-between;
 }
 
-.footer-text {
+.footer__text {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -915,11 +871,11 @@ img {
   color: var(--common-white);
 }
 
-.footer-icon {
+.footer__icon {
   fill: var(--common-white);
 }
 
-.footer-links {
+.footer__links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -937,11 +893,11 @@ img {
   transition: background-color var(--anim);
 }
 
-.footer-links:hover {
+.footer__links:hover {
   background-color: var(--color-blue);
 }
 
-.footer-links:focus {
+.footer__links:focus {
   background-color: var(--color-blue);
 }
 
@@ -1032,16 +988,60 @@ img {
           transform: translate(-50%);
 }
 
-.portfolio-list {
+.menu__btn {
+  padding: 6px 22px;
+  border: 0;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  cursor: pointer;
+  -webkit-transition: color var(--anim), background-color var(--anim), -webkit-box-shadow var(--anim);
+  transition: color var(--anim), background-color var(--anim), -webkit-box-shadow var(--anim);
+  transition: color var(--anim), background-color var(--anim), box-shadow var(--anim);
+  transition: color var(--anim), background-color var(--anim), box-shadow var(--anim), -webkit-box-shadow var(--anim);
+}
+
+.menu__btn:hover {
+  background-color: var(--color-blue);
+  color: var(--common-white);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.menu__btn:focus {
+  background-color: var(--color-blue);
+  color: var(--common-white);
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfolio__list {
   background-color: var(--common-white);
 }
 
-.team-thumb {
+.portfolio__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.overlay-portfolio {
+.portfolio__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1062,7 +1062,7 @@ img {
   transition: transform var(--anim), -webkit-transform var(--anim);
 }
 
-.overlay-portfolio-text {
+.portfolio__overlay--text {
   padding: 63px 24px;
   font-weight: 400;
   font-size: 18px;
@@ -1072,12 +1072,12 @@ img {
   text-align: left;
 }
 
-.portfolio-list:hover .overlay-portfolio {
+.portfolio__list:hover .portfolio__overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-.portfolio-link {
+.portfolio__link {
   display: block;
   text-decoration: none;
   color: var(--primary-color);
@@ -1087,25 +1087,25 @@ img {
   transition: box-shadow var(--anim), -webkit-box-shadow var(--anim);
 }
 
-.portfolio-link:hover {
+.portfolio__link:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-card {
+.portfolio__card {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
 }
 
-.portfolio-title {
+.portfolio__title {
   margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.portfolio-text {
+.portfolio__text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;

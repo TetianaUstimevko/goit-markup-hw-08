@@ -11,7 +11,7 @@
     transform: translate(-50%);
 }
 
-.menu_btn {
+.menu__btn {
     padding: 6px 22px;
     border: 0;
     border-radius: 4px;
@@ -27,38 +27,38 @@
         box-shadow var(--anim);
 }
 
-.menu_btn:hover {
+.menu__btn:hover {
     background-color: var(--color-blue);
     color: var(--common-white);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.menu_btn:focus {
+.menu__btn:focus {
     background-color: var(--color-blue);
     color: var(--common-white);
 }
 
-.menu_item:not(:last-child) {
+.menu__item:not(:last-child) {
     margin-right: 8px;
 }
 
-.menu_list {
+.menu__list {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
 
-.portfolio-list {
+.portfolio__list {
     background-color: var(--common-white);
 }
 
-.team-thumb {
+.portfolio__thumb {
     position: relative;
     overflow: hidden;
 }
 
-.overlay-portfolio {
+.portfolio__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -76,7 +76,7 @@
     transition: transform var(--anim);
 }
 
-.overlay-portfolio-text {
+.portfolio__overlay--text {
     padding: 63px 24px;
     font-weight: 400;
     font-size: 18px;
@@ -86,36 +86,36 @@
     text-align: left;
 }
 
-.portfolio-list:hover .overlay-portfolio {
+.portfolio__list:hover .portfolio__overlay {
     transform: translateY(0);
 }
 
-.portfolio-link {
+.portfolio__link {
     display: block;
     text-decoration: none;
     color: var(--primary-color);
     transition: box-shadow var(--anim);
 }
 
-.portfolio-link:hover {
+.portfolio__link:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-card {
+.portfolio__card {
     padding: 20px 24px;
     border: 1px solid #eeeeee;
     border-top: none;
 }
 
-.portfolio-title {
+.portfolio__title {
     margin-bottom: 4px;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 
-.portfolio-text {
+.portfolio__text {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
