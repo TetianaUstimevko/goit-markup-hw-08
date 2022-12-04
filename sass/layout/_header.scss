@@ -48,6 +48,16 @@
     display: none;
     // display: flex;
     // gap: 50px;
+    @media screen and (min-width: 768px) {
+    display: flex;
+    // flex-direction: column;
+    }
+    
+    // desktop
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 50px;
+    }
 }
 
 .contact__icon {
