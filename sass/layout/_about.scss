@@ -1,50 +1,46 @@
 // .about {
-//     display: none;
-//     // position: absolute;
-//     // white-space: nowrap;
-//     // width: 1px;
-//     // height: 1px;
-//     // overflow: hidden;
-//     // border: 0;
-//     // padding: 0;
-//     // clip: rect(0 0 0 0);
-//     // clip-path: inset(50%);
-//     // margin: -1px;
-
-//     // @include section;
-//     //використала міксин
+//     position: absolute;
+//     white-space: nowrap;
+//     width: 1px;
+//     height: 1px;
+//     overflow: hidden;
+//     border: 0;
+//     padding: 0;
+//     clip: rect(0 0 0 0);
+//     clip-path: inset(50%);
+//     margin: -1px;
 
 //     @media screen and (min-width: 768px) {
-//     // position: absolute;
-//     // white-space: nowrap;
-//     // width: 1px;
-//     // height: 1px;
-//     // overflow: hidden;
-//     // border: 0;
-//     // padding: 0;
-//     // clip: rect(0 0 0 0);
-//     // clip-path: inset(50%);
-//     // margin: -1px;
-
+//     position: absolute;
+//     white-space: nowrap;
+//     width: 1px;
+//     height: 1px;
+//     overflow: hidden;
+//     border: 0;
+//     padding: 0;
+//     clip: rect(0 0 0 0);
+//     clip-path: inset(50%);
+//     margin: -1px;
 //     }
     
 //     @media screen and (min-width: 1200px) {
 //     @include section;
-//     //використала міксин
 //     }
 // }
 
 .about {
- 
-    @media screen and (min-width: 768px) {
-
-
-    }    
-    
-    @media screen and (min-width: 1200px) {
+    // display: none;
     @include section;
     padding-top: 0;
-    }
+    // @media screen and (min-width: 768px) {
+    // display: none;
+
+    // }    
+    
+    // @media screen and (min-width: 1200px) {
+    // @include section;
+    // padding-top: 0;
+    // }
    
 }
 
