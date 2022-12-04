@@ -4,7 +4,19 @@
 }
 
 .benefits__list {
-    display: flex;
+    //phone
+    // display: flex;
+
+
+    // tablet
+    @media screen and (min-width: 768px) {
+        display: flex;
+        }
+    
+    // desktop
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        }
 }
 
 .benefits__items:not(:last-child) {
@@ -15,11 +27,19 @@
     display: flex;
     background-color: #f5f4fa;
     border-radius: 4px;
-    width: 270px;
+    width: 450px;
     height: 120px;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+    width: 354px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+    width: 270px;
+    }
 }
 
 .benefits__icon {
@@ -40,5 +60,13 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--color-grey);
+    width: 450px;
+
+    @media screen and (min-width: 768px) {
+    width: 354px;
+    }
+    
+    @media screen and (min-width: 1200px) {
     width: 270px;
+    }
 }

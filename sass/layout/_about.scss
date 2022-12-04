@@ -1,6 +1,36 @@
 .about {
+    // position: absolute;
+    // white-space: nowrap;
+    // width: 1px;
+    // height: 1px;
+    // overflow: hidden;
+    // border: 0;
+    // padding: 0;
+    // clip: rect(0 0 0 0);
+    // clip-path: inset(50%);
+    // margin: -1px;
+
+    // @include section;
+    //використала міксин
+
+    @media screen and (min-width: 768px) {
+    // position: absolute;
+    // white-space: nowrap;
+    // width: 1px;
+    // height: 1px;
+    // overflow: hidden;
+    // border: 0;
+    // padding: 0;
+    // clip: rect(0 0 0 0);
+    // clip-path: inset(50%);
+    // margin: -1px;
+
+    }
+    
+    @media screen and (min-width: 1200px) {
     @include section;
     //використала міксин
+    }
 }
 
 .about {
@@ -13,13 +43,13 @@
     gap: var(--indent);
 }
 
-.section-title {
-    margin-bottom: 50px;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
+// .section-title {
+//     margin-bottom: 50px;
+//     font-size: 36px;
+//     line-height: 1.16;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+// }
 
 .about__item {
     position: relative;
