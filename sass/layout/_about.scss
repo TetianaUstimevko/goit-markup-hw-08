@@ -1,9 +1,11 @@
 .about {
-    @include section;
-    padding-top: 0;
+    // @include section;
+    // padding-top: 0;
 
     @media screen and (max-width: 1199.98px) {
     display: none;
+    @include section;
+    padding-top: 0;
     }    
    }
 
