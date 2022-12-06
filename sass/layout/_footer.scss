@@ -46,10 +46,57 @@
 }
 
 .footer__container {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    // display: flex;
+    // align-items: baseline;
+    // justify-content: space-between;
+   text-align: center;
+// Tablet styles
+    @media screen and (min-width: map-get($breakpoints, 'tablet')) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    // Desktop styles
+    @media screen and (min-width: map-get($breakpoints, 'desktop')) {
+        text-align: left;
+    }
 }
+
+
+// новое
+.footer__contacts {
+    margin-bottom: 60px;
+    
+        // Tablet styles
+        @media screen and (min-width: map-get($breakpoints, 'tablet')) {
+            margin-right: 165px;
+        }
+    
+        // Desktop styles
+        @media screen and (min-width: map-get($breakpoints, 'desktop')) {
+            margin-right: 70px;
+            margin-bottom: 0;
+        }
+}
+
+.footer__socials {
+// Phone styles
+    @media screen and (max-width: calc(map-get($breakpoints, 'tablet') - 0.02px)) {
+        margin-bottom: 60px;
+    }
+
+    // Tablet styles
+    @media screen and (min-width: map-get($breakpoints, 'tablet')) {}
+
+    // Desktop styles
+    @media screen and (min-width: map-get($breakpoints, 'desktop')) {
+        margin-right: auto;
+    }
+}
+
+// конец нового
 
 .footer__text {
     align-items: center;
@@ -60,6 +107,12 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--common-white);
+
+    // Desktop styles
+        @media screen and (min-width: map-get($breakpoints, 'desktop')) {
+            text-align: left;
+        }
+
 }
 
 .footer__icon {
@@ -91,7 +144,8 @@
 }
 
 .footer-btn-send {
-    display: inline-flex;
+    display: flex;
+    // display: inline-flex;
     justify-content: center;
     align-items: center;
     border: 0;
@@ -112,6 +166,10 @@
     align-items: center;
     text-align: center;
     cursor: pointer;
+    // Desktop styles
+        @media screen and (min-width: map-get($breakpoints, 'desktop')) {
+            text-align: left;
+        }
 }
 
 .footer-btn-send-icon {
