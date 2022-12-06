@@ -1,15 +1,15 @@
-.menu {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
+// .menu {
+//     display: flex;
+//     padding: 0;
+//     margin: 0;
+//     list-style: none;
+// }
 
-@media (max-width: 767px) {
-    .menu {
-        display: none;
-    }
-}
+// @media (max-width: 767px) {
+//     .menu {
+//         display: none;
+//     }
+// }
 
 .menu .link {
     padding: 10px;
@@ -36,11 +36,9 @@
     border: none;
     border-radius: 50%;
     outline: none;
-}
 
-@media (min-width: 768px) {
-    .menu-toggle {
-        display: none;
+    @media screen and (min-width: 768px) {
+    display: none;
     }
 }
 
@@ -97,10 +95,27 @@
 
 .mobile-socials {
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
     gap: 20px;
 }
 
-
+.mobile-menu-item {
+    // phone styles
+        @media screen and (max-width: calc(map-get($breakpoints, 'tablet') - 0.02px)) {
+            &:not(:last-child) {
+                margin-bottom: 32px;
+            }
+        }
+    
+        // Tablet styles
+        @media screen and (min-width: map-get($breakpoints, 'tablet')) {
+            &:not(:last-child) {
+                margin-right: 50px;
+            }
+        }
+}
 .mobile-menu-link {
     display: block;
     padding: 10px;
@@ -110,6 +125,24 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: #212121;
+
+    // phone styles
+        @media screen and (max-width: 767.98px) {
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 1.18;
+            letter-spacing: 0.02em;
+        }
+    
+        // Tablet styles
+        @media screen and (min-width: 767.98px) {
+            padding-top: 32px;
+            padding-bottom: 32px;
+    
+            font-size: 14px;
+            line-height: 1.14;
+        }
+
 }
 .link-accent {
     color: #2196F3;
@@ -118,6 +151,8 @@
 .mobile-contacts-link {
     display: block;
     padding: 10px;
+
+    
 }
 
 .link-phone {
@@ -141,7 +176,14 @@
 }
 
 .mobile-socials-link {
-  
+
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    display: inline;
+
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -149,6 +191,12 @@
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: #2196F3;
+}
+
+.mobile-socials .mobile-socials-item:not(:last-child) {
+    padding-right: 10px;
+
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .icon-close {

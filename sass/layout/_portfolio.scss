@@ -12,6 +12,7 @@
 }
 
 .menu__btn {
+
     padding: 6px 22px;
     border: 0;
     border-radius: 4px;
@@ -49,24 +50,25 @@
 
 .menu__item {
     // Phone styles
-        @media screen and (max-width: calc(map-get($breakpoints, 'phone') - 0.02px)) {
+        @media screen and (max-width: 767.98px) {
             width: 100%;
         }
     
         // Tablet styles
-        @media screen and (min-width: map-get($breakpoints, 'tablet')) {
+        @media screen and (min-width: 767.98px) {
             width: calc((100% - 30px * 1) / 2);
         }
     
         // Desktop styles
-        @media screen and (min-width: map-get($breakpoints, 'desktop')) {
+        @media screen and (min-width: 1199.98px) {
             width: calc((100% - 30px * 2) / 3);
+           
         }
 }
 
-.menu__item:not(:last-child) {
-    margin-right: 8px;
-}
+// .menu__item:not(:last-child) {
+//     margin-right: 8px;
+// }
 
 
 
