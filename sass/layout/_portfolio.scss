@@ -39,15 +39,36 @@
     color: var(--common-white);
 }
 
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    // justify-content: center;
+    // margin-bottom: 50px;
+}
+
+.menu__item {
+    // Phone styles
+        @media screen and (max-width: calc(map-get($breakpoints, 'phone') - 0.02px)) {
+            width: 100%;
+        }
+    
+        // Tablet styles
+        @media screen and (min-width: map-get($breakpoints, 'tablet')) {
+            width: calc((100% - 30px * 1) / 2);
+        }
+    
+        // Desktop styles
+        @media screen and (min-width: map-get($breakpoints, 'desktop')) {
+            width: calc((100% - 30px * 2) / 3);
+        }
+}
+
 .menu__item:not(:last-child) {
     margin-right: 8px;
 }
 
-.menu__list {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-}
+
 
 .portfolio__list {
     background-color: var(--common-white);

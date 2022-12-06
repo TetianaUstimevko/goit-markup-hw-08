@@ -3,28 +3,31 @@
     //використала плейсхолдер
 }
 
+
 .benefits__list {
+
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-   
+
 }
 
 .benefits__items {
+
     // Phone styles
-    @media screen and (max-width: calc(map-get($breakpoints, 'tablet') - 0.02px)) {
-    width: 100%;
-    }
+        @media screen and (max-width: calc(map-get($breakpoints, 'tablet') - 0.02px)) {
+            width: 100%;
+        }
     
-    // Tablet styles
-    @media screen and (min-width: map-get($breakpoints, 'tablet')) {
-    width: calc((100% - (30px * 1)) / 2);
-    }
+        // Tablet styles
+        @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 2 * 30px) / 2);
+        }
     
-    // Desktop styles
-    @media screen and (min-width: map-get($breakpoints, 'desktop')) {
-    width: calc((100% - (30px * 3)) / 4);
-    }
+        // Desktop styles
+        @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 4 * 30px) / 4);
+        }
+
     }
 
 
@@ -42,13 +45,6 @@
     align-items: center;
     margin-bottom: 30px;
 
-    // @media screen and (min-width: 768px) {
-    // width: 354px;
-    // }
-    
-    // @media screen and (min-width: 1200px) {
-    // width: 270px;
-    // }
 }
 
 .benefits__icon {
@@ -71,11 +67,4 @@
     color: var(--color-grey);
     // width: 270px;
 
-    // @media screen and (min-width: 768px) {
-    // width: 354px;
-    // }
-    
-    // @media screen and (min-width: 1200px) {
-    // width: 270px;
-    // }
 }
