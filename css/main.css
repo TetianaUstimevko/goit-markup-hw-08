@@ -65,6 +65,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .section {
@@ -808,6 +810,7 @@ img {
 
 .contact__icon {
   fill: currentColor;
+  margin-right: 10px;
 }
 
 .list {
