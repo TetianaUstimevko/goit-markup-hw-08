@@ -4,6 +4,23 @@
     gap: var(--indent);
 }
 
+// .card__set--item {
+//     flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
+// }
+
 .card__set--item {
-    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
+// Phone styles
+@media screen and (max-width: calc(map-get($breakpoints, 'tablet') - 0.02px)) {
+width: 100%;
+}
+    
+// Tablet styles
+@media screen and (min-width: map-get($breakpoints, 'tablet')) {
+width: calc((100% - 30px * 1) / 2);
+}
+    
+// Desktop styles
+@media screen and (min-width: map-get($breakpoints, 'desktop')) {
+width: calc((100% - 30px * 2) / 3);
+}
 }
