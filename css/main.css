@@ -1281,9 +1281,8 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -1297,11 +1296,6 @@ img {
 
 .footer__contacts {
   margin-bottom: 60px;
-}
-@media screen and (min-width: 768px) {
-  .footer__contacts {
-    margin-right: 165px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .footer__contacts {
@@ -1322,9 +1316,7 @@ img {
 }
 
 .footer__text {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -1394,6 +1386,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 200px;
+  height: 50px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1405,9 +1399,6 @@ img {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  min-width: 200px;
-  min-height: 50px;
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -1420,6 +1411,9 @@ img {
 }
 
 .footer-input {
+  margin-bottom: 20px;
+  padding: 15px 16px;
+  height: 50px;
   padding: 0;
   width: 358px;
   height: 50px;
