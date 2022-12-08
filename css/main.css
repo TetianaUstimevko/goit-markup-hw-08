@@ -906,6 +906,7 @@ img {
     background-size: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero/bg_md@1x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/bg_md@1x.jpg);
+    padding: 118px 0;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -946,6 +947,7 @@ img {
 @media screen and (min-width: 768px) {
   .hero__title {
     line-height: 1.62;
+    width: 360px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1150,34 +1152,30 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
 }
 
 .clients__items {
-  width: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 92px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .clients__items {
-    -ms-flex-preferred-size: calc((100% - 30px) / 2);
-        flex-basis: calc((100% - 30px) / 2);
+    width: calc((100% - 30px) / 2);
   }
 }
-@media screen and (min-width: 767) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .clients__items {
-    -ms-flex-preferred-size: calc((100% - 60px) / 3);
-        flex-basis: calc((100% - 60px) / 3);
+    width: calc((100% - 60px) / 3);
   }
 }
-@media screen and (min-width: 1199) {
+@media screen and (min-width: 1200px) {
   .clients__items {
-    -ms-flex-preferred-size: calc((100% - 150px) / 6);
-        flex-basis: calc((100% - 150px) / 6);
+    width: calc((100% - 150px) / 6);
   }
 }
 
