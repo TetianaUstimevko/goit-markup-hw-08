@@ -87,10 +87,10 @@ img {
 }
 
 .container {
-  padding-right: 15px;
+  margin: 0 auto;
   padding-left: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-right: 15px;
+  width: 100%;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -784,10 +784,7 @@ img {
 }
 
 .header {
-  border: 1px solid #ececec;
-  border-top: none;
-  border-right: none;
-  border-left: none;
+  border-bottom: 1px solid #ececec;
 }
 
 .icon-menu {

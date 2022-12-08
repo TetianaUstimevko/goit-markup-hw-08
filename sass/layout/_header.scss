@@ -1,9 +1,8 @@
 .header {
-
-    border: 1px solid #ececec;
-    border-top: none;
-    border-right: none;
-    border-left: none;
+    border-bottom: 1px solid #ececec;
+    // border-top: none;
+    // border-right: none;
+    // border-left: none;
 
 }
 .icon-menu {
@@ -53,7 +52,7 @@
 }
 
 // Desktop styles
-@media screen and (min-width: map-get($breakpoints, 'desktop')) {
+@media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
     // gap: 50px;
