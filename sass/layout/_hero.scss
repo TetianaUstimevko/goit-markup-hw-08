@@ -77,19 +77,26 @@
 
     font-weight: 900;
     font-size: 26px;
-    line-height: 1.62;
+    line-height: 1.61;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--common-white);
     
-    // desktop
-    @media screen and (min-width: 768px) {
+    // tablet
+    @media screen and (max-width: 767.98px) {
     max-width: 360px;
-    font-size: 27px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
    
     }
+
+  // desctop
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
            
+}
 }
 
 .hero__btn {

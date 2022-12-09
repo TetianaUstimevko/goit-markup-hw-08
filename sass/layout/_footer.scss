@@ -156,6 +156,7 @@
     // Desktop styles
     // @media screen and (min-width: 1200px) {
     //     flex-direction: row;
+ 
     // }
 }
 
@@ -230,6 +231,9 @@
     color: var(--common-white);
     // text-align: center;
     cursor: pointer;
+    // @media screen and (max-width: 767.98px) {
+    //         margin: 0 auto;
+    //     }
     }
 
 .footer-btn-send-icon {
