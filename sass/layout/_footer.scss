@@ -154,9 +154,9 @@
     align-items: center;
     
     // Desktop styles
-    @media screen and (min-width: 1200px) {
-        flex-direction: row;
-    }
+    // @media screen and (min-width: 1200px) {
+    //     flex-direction: row;
+    // }
 }
 
 .footer-input {
@@ -204,6 +204,8 @@
 }
 
 .footer-btn-send {
+    margin: 0 auto;
+
     display: flex;
     width: 200px;
     height: 50px;
@@ -235,10 +237,12 @@
 }
 
 
+.footer-send-blok {
+    display: flex;
+}
+
 // .footer-send-form {
-//     margin: 0;
-//     padding: 0;
-//     width: 570px;
+//     display: flex;
 // }
 
 // .footer-send-blok {
