@@ -152,6 +152,7 @@
 
     margin-bottom: 20px;
     line-height: 1.14;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
 
     color: var(--common-white);
@@ -213,7 +214,7 @@
 }
 
 .footer-btn-send {
-    
+       
     display: flex;
     justify-content: center;
     align-items: center;
