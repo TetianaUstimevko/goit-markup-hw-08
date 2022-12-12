@@ -1526,6 +1526,11 @@ img {
     margin-right: 12px;
   }
 }
+@media screen and (max-width: 1199.98px) {
+  .footer-input {
+    margin-bottom: 20px;
+  }
+}
 
 .footer-btn-send {
   gap: 10px;
